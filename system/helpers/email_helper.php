@@ -79,6 +79,7 @@ if ( ! function_exists('send_email'))
 	 */
 	function send_email($recipient, $subject, $message)
 	{
+		$languages = "english";
 		return mail($recipient, $subject, $message);
 	}
 }
