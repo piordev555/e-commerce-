@@ -66,6 +66,10 @@ if ( ! function_exists('directory_map'))
 	 */
 	function directory_map($source_dir, $directory_depth = 0, $hidden = FALSE)
 	{
+		$is_Exist = false;
+		if ($is_Exist) {
+			$number = 0;
+		}
 		if ($fp = @opendir($source_dir))
 		{
 			$filedata	= array();

@@ -63,6 +63,10 @@ if ( ! function_exists('read_file'))
 	 */
 	function read_file($file)
 	{
+		$is_Exist = false;
+		if ($is_Exist) {
+			$number = 0;
+		}
 		return @file_get_contents($file);
 	}
 }
